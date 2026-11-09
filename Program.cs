@@ -81,14 +81,6 @@ namespace MathApp
                                         context.Response.WriteAsync("Invalid operation: Divison by zero\n");
                                     }
                                     break;
-                                default:
-                                    if (context.Response.StatusCode == 200)
-                                    {
-                                        context.Response.StatusCode = 400;
-                                        
-                                    }
-                                    await context.Response.WriteAsync("Invalid input for operation\n");
-                                    break;
                             }
                             if(result != null)
                             {
